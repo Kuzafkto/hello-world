@@ -25,3 +25,9 @@
 #container a {
   text-decoration: none;
 }
+
+.user-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

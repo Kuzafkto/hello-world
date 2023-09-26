@@ -1,0 +1,32 @@
+.inline{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+ion-card{
+    width: 350px;
+    background-color: #1e1e1e;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ion-img {
+  width: 50px;
+}
+
+ion-card-title {
+  color: #5e66f5;
+}
+
+.valor-usuario {
+  margin-left: 20px;
+}
+
+.info-usuario{
+    margin-left: 10px;
+    color: rgb(137, 182, 197);
+}
