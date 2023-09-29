@@ -28,7 +28,7 @@ export class HomePage implements OnInit{
     this._users.next([...users]);
 
     const options:ToastOptions={
-      message:`User ${event.fav?'added':'removed'} ${event.fav?'to':'from'}favourites`,
+      message:`User ${event.fav?'added ':'removed '} ${event.fav?'to ':'from '}favourites`,
       duration:1000,
       position:'bottom',
       color:'danger',
