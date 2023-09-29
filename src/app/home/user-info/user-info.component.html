@@ -1,11 +1,17 @@
-<ion-card [routerLink]="'/welcome'">
+<ion-card>
   <ion-card-header>
-    <ion-card-title class="inline">
+    <div class="inline">
     <ion-avatar>
     <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
     </ion-avatar>
+    <ion-card-title >
       {{usuario?.nombre}} {{usuario?.apellidos|letraApellido}}
     </ion-card-title>
+    <ion-button class="fav-button" fill="clear" aria-label="Favorite" (click)="onFavClick($event)"> 
+      <ion-icon *ngIf="usuario?.fav==true" slot="icon-only" color="danger" name="heart" aria-hidden="true"></ion-icon>
+      <ion-icon *ngIf="usuario?.fav==false" slot="icon-only" color="medium" name="heart-outline" aria-hidden="true"></ion-icon>
+    </ion-button>
+  </div>
   </ion-card-header>
     <ion-card-title class="info-usuario">Nombre</ion-card-title>
     <ion-card-subtitle class="valor-usuario">{{usuario?.nombre}}</ion-card-subtitle>
